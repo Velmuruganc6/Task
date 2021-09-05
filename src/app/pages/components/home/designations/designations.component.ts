@@ -9,7 +9,7 @@ import { DataService } from 'src/app/pages/services/data.service';
 })
 export class DesignationsComponent implements OnInit {
 
-  designations: any;
+  destinations: any;
   customOptions: OwlOptions = {
     loop: true,
     margin: 20,
@@ -17,13 +17,13 @@ export class DesignationsComponent implements OnInit {
     dots: false,
     responsive: {
       0: {
-        items: 7
+        items: 2
       },
       400: {
-        items: 7
+        items: 2
       },
       740: {
-        items: 7
+        items: 4
       },
       940: {
         items: 7
@@ -39,7 +39,7 @@ export class DesignationsComponent implements OnInit {
 
   showDesignations() {
     this.dataService.getDesignations().subscribe(res => {
-      this.designations = res.result;
+      this.destinations = res.result;
     });
   }
 

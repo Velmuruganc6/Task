@@ -7,10 +7,10 @@
     </div>
     <div class="destinations-slider">
         <owl-carousel-o [options]="customOptions">
-            <ng-container *ngFor="let designation of designations">
+            <ng-container *ngFor="let destination of destinations">
                 <ng-template carouselSlide>
-                    <img [src]="designation.imageUrl" [alt]="designation.city">
-                    <p>{{designation.city}}</p>
+                    <img [src]="destination.imageUrl" [alt]="destination.city">
+                    <p>{{destination.city}}</p>
                 </ng-template>
             </ng-container>
         </owl-carousel-o>
