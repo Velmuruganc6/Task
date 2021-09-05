@@ -10,23 +10,23 @@
             <label for="userName">Your Name</label>
             <input type="text" formControlName="userName" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }">
             <div *ngIf="submitted && f.userName.errors">
-                <div *ngIf="f.userName.errors.required">Name is required</div>
+                <div class="error-msg" *ngIf="f.userName.errors.required">Name is required</div>
             </div>
         </div>
         <div class="contact-text">
             <label for="mobile">Contact No</label>
             <input type="tel" formControlName="mobile" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" />
             <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
-                <div *ngIf="f.mobile.errors.required">Contact No is required</div>
-                <div *ngIf="f.mobile.errors.minlength">Invalid Contact No</div>
+                <div class="error-msg" *ngIf="f.mobile.errors.required">Contact No is required</div>
+                <div class="error-msg" *ngIf="f.mobile.errors.minlength">Invalid Contact No</div>
             </div>
         </div>
         <div class="contact-text">
             <label for="email">Email</label>
             <input type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
             <div *ngIf="submitted && f.email.errors">
-                <div *ngIf="f.email.errors.required">Email is required</div>
-                <div *ngIf="f.email.errors.email">Invalid Email</div>
+                <div class="error-msg" *ngIf="f.email.errors.required">Email is required</div>
+                <div class="error-msg" *ngIf="f.email.errors.email">Invalid Email</div>
             </div>
         </div>
         <!-- <div>
