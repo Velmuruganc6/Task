@@ -302,7 +302,61 @@ img {
         padding: 30px 30px;
     }
 }
+
 /* Featured Destinations End */
+
+/* Promo Content */
+.promo {
+    position: relative;
+    overflow: hidden;
+    background-image: url('../src/assets/images/promo-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    .promo-content {
+        position: absolute;
+        z-index: 9999;
+        bottom: 100px;
+        left: 100px;
+        color: #fff;
+
+        h1 {
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .promo {
+
+        .promo-content {
+            left: 30px;
+
+            h1 {
+                font-size: 30px;
+                letter-spacing: 3px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/* Promo Content End */
 
 /* Get a Quote */
 .get-a-quote {}
@@ -313,6 +367,30 @@ img {
 .footer {
     background: linear-gradient(to right, #000000 10%, #133357);
     color: #fff;
+    padding: 30px 150px;
+
+    .footer-widget {
+        h4 {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            li {
+                a {
+                    color: #fff;
+                    line-height: 30px;
+                    cursor: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer {
+        padding: 30px 30px;
+    }
 }
 
 /* Footer  End */
