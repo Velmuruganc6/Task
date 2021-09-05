@@ -359,7 +359,71 @@ img {
 /* Promo Content End */
 
 /* Get a Quote */
-.get-a-quote {}
+.get-a-quote {
+    padding: 30px 30px;
+
+    form {
+        margin: 0 auto;
+        width: 40%;
+
+        .contact-text {
+            margin-bottom: 20px;
+
+            label {
+                color: gray;
+                display: inline-block;
+                margin-bottom: .5rem;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                padding: 10px 10px;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+                outline: none;
+            }
+
+            .error-msg {
+                color: red;
+            }
+        }
+
+        .contact-btn {
+            text-align: center;
+
+            .btn {
+                background: linear-gradient(to right, #000000 10%, #133357);
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: 18px;
+                padding: 15px 40px;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .get-a-quote {
+        h1 {
+            font-size: 22px;
+        }
+
+        form {
+            width: 100%;
+        }
+    }
+}
 
 /* Get a Quote End */
 
@@ -370,6 +434,7 @@ img {
     padding: 30px 150px;
 
     .footer-widget {
+
         h4 {
             font-size: 18px;
             letter-spacing: 1px;
@@ -390,6 +455,10 @@ img {
 @media only screen and (max-width: 991px) {
     .footer {
         padding: 30px 30px;
+
+        .footer-widget {
+            margin-bottom: 30px;
+        }
     }
 }
 
