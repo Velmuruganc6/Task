@@ -1,0 +1,16 @@
+<!-- Weather Channel -->
+<section class="weather-channel">
+    <div fxLayout="column">
+        <div class="weather-title" fxFlex="100">
+            <h4>The Weather Channel</h4>
+        </div>
+    </div>
+    <div fxLayout="row wrap">
+        <div class="weather-list-box" fxFlex="25" fxFlex.lt-md="50" fxFlex.lt-sm="50" *ngFor="let weather of weathers">
+            <h4>{{weather.city}}</h4>
+            <img src="assets/images/icon-party-sunny.svg" [alt]="weather.city">
+            <p>{{weather.temp_Celsius}}&#176;</p>
+        </div>
+    </div>
+</section>
+<!-- Weather Channel End -->

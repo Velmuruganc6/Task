@@ -1,0 +1,304 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: #133357;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Header Banner */
+
+.header-banner {
+    background: linear-gradient(to right, #000000 10%, #133357);
+    color: #fff;
+    text-align: center;
+
+    p {
+        font-size: 18px;
+        padding: 15px 15px 5px 15px;
+    }
+
+    p:last-child {
+        font-weight: 500;
+        padding: 0px 15px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header-banner {
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+/* Header Banner End */
+
+/* Navigation Bar */
+
+.navigation-bar {
+    nav {
+        margin: 30px 100px 20px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 30px;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navigation-bar {
+        nav {
+            margin: 30px 0px 20px;
+        }
+
+        nav ul li a {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+}
+
+/* Navigation Bar End */
+
+/* Welcome Content */
+.welcome {
+    padding: 30px 150px;
+
+    .welcome-img {
+        margin-bottom: 30px;
+
+        img {
+            width: 500px;
+        }
+    }
+
+    .welcome-content {
+        padding: 65px 0px;
+
+        h1 {
+            letter-spacing: 0.9px;
+            font-size: 54px;
+            line-height: 70px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 35px;
+            margin-bottom: 35px;
+        }
+
+        a {
+            background: linear-gradient(to right, #000000 10%, #133357);
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 18px;
+            padding: 15px 40px;
+            border-radius: 5px;
+            cursor: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .welcome {
+        padding: 30px 30px;
+
+        .welcome-img {
+            margin-bottom: 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .welcome-content {
+            padding: 0px 0px;
+            text-align: center;
+
+            h1 {
+                letter-spacing: 0.2px;
+                font-size: 26px;
+                line-height: 40px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+/* Welcome Content End */
+
+/* Weather Channel */
+.weather-channel {
+    padding: 30px 150px;
+
+    .weather-title {
+        background: #133357;
+        color: #fff;
+
+        h4 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+    }
+
+    .weather-list-box {
+        background: #0D7E88;
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px 60px;
+
+        h4 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 70px;
+            font-weight: 500;
+            margin: 25px;
+            padding: 0 70px;
+        }
+    }
+
+    .weather-list-box:nth-child(2) {
+        background: #D09378;
+    }
+
+    .weather-list-box:nth-child(3) {
+        background: #405B5D;
+    }
+
+    .weather-list-box:nth-child(4) {
+        background: #74A748;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .weather-channel {
+        padding: 30px 30px;
+
+        .weather-title {
+
+            h4 {
+                letter-spacing: 2px;
+                font-size: 14px;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        .weather-list-box {
+            padding: 10px 20px 20px;
+
+            img {
+                margin-bottom: 0px;
+            }
+
+            p {
+                font-size: 40px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+/* Weather Channel End */
+
+/* Featured Destinations  */
+.destinations {
+    .destinations-slider {
+        img {
+            height: 200px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 15px;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+/* Featured Destinations End */
+
+/* Get a Quote */
+.get-a-quote {}
+
+/* Get a Quote End */
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #000000 10%, #133357);
+    color: #fff;
+}
+
+/* Footer  End */

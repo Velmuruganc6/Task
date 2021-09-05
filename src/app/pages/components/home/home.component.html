@@ -1,0 +1,109 @@
+<!--  Header Banner -->
+<section class="header-banner" fxLayout="column">
+    <div fxFlex="100">
+        <p>Book now to get exciting travel deals. Upto 40% off on credit card payments</p>
+        <p>Offers ends in 1d 10h 5m 10s</p>
+    </div>
+</section>
+<!--  Header Banner End -->
+
+<!-- Navigation Bar -->
+<section class="navigation-bar" fxLayout="column" fxLayoutGap="50px" fxLayoutAlign="end end"
+    fxLayoutAlign.lt-md="center center" fxLayoutAlign.lt-sm="center center">
+    <nav fxFlex="100">
+        <ul>
+            <li><a routerLinkActive="active" [routerLink] fragment="weather">Weather </a></li>
+            <li><a routerLinkActive="active" [routerLink] fragment="destinations">Destinations </a></li>
+            <li><a routerLinkActive="active" [routerLink] fragment="contact">Get a Quote </a></li>
+        </ul>
+    </nav>
+</section>
+<!-- Navigation Bar End -->
+
+<!-- Welcome Content -->
+<section class="welcome">
+    <div fxLayout="row" fxFlex.lt-md="column" fxLayout.lt-sm="column" fxLayoutGap="20px">
+        <div fxFlex="50" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+            <div class="welcome-img">
+                <img src="assets/images/welcome-image.svg" alt="Tripzone">
+            </div>
+        </div>
+        <div fxFlex="50" fxFlex.lt-md="100%" fxFlex.lt-sm="100%">
+            <div class="welcome-content">
+                <h1>Life is short
+                    <br>and the world is wide!
+                </h1>
+                <p>Stay at the confort of your homes and book a trip to travel <br>after the post pandemic era.</p>
+                <a href="javascript:void(0);">Plan a trip</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Welcome Content End -->
+
+<app-weather id="weather"></app-weather>
+
+<app-designations id="destinations"></app-designations>
+
+<!-- Promo Content -->
+<section class="promo-content" style="background-image: url('assets/images/promo-image.png'); height: 500px;">
+    <div fxLayout="row" fxFlex.lt-md="column" fxLayout.lt-sm="column">
+        <div fxFlex="100">
+            <h1>Plan a trip</h1>
+            <p>Make your vacation the most
+                <br>memorable one
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Promo Content End -->
+
+<app-contact id="contact"></app-contact>
+
+<!-- Footer -->
+<section class="footer">
+    <div fxLayout="row" fxFlex.lt-md="column" fxLayout.lt-sm="column">
+        <div fxFlex="25" fxFlex.lt-md="100" fxFlex.lt-sm="100">
+            <div class="footer-widget">
+                <h4>Tripzone</h4>
+                <ul>
+                    <li><a>About</a></li>
+                    <li><a>Awards</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        <div fxFlex="25" fxFlex.lt-md="100" fxFlex.lt-sm="100">
+            <div class="footer-widget">
+                <h4>Main Offices</h4>
+                <ul>
+                    <li><a>The United States</a></li>
+                    <li><a>India</a></li>
+                    <li><a>Brazil</a></li>
+                    <li><a>Canada</a></li>
+                </ul>
+            </div>
+        </div>
+        <div fxFlex="20" fxFlex.lt-md="100" fxFlex.lt-sm="100">
+            <div class="footer-widget">
+                <h4>Sub Offices</h4>
+                <ul>
+                    <li><a>Australia</a></li>
+                    <li><a>England</a></li>
+                    <li><a>France</a></li>
+                    <li><a>Germany</a></li>
+                </ul>
+            </div>
+        </div>
+        <div fxFlex="30" fxFlex.lt-md="100" fxFlex.lt-sm="100">
+            <div class="footer-widget">
+                <h4>Disclaimer</h4>
+                <p>This layout is created as a part of Sirius UI Recruitments.
+                    <br>All the above content has no direct relation with Sirius business.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer End -->
