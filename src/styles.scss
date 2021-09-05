@@ -391,6 +391,10 @@ img {
             .error-msg {
                 color: red;
             }
+
+            .is-invalid {
+                border: 1px solid red;
+            }
         }
 
         .contact-btn {
